@@ -16,11 +16,24 @@
 
 // Inclusão das bibliotecas padrão necessárias para entrada/saída, alocação de memória, manipulação de strings e tempo.
 
+#include <stdio.h> // nos proporciona o printf e scanf
+#include <string.h> // manipulação de texto 
+
 // --- Constantes Globais ---
 // Definem valores fixos para o número de territórios, missões e tamanho máximo de strings, facilitando a manutenção.
 
+#define Max_Territorios 5
+#define Tam_Nome 50
+#define Tam_Cor 20
+
 // --- Estrutura de Dados ---
 // Define a estrutura para um território, contendo seu nome, a cor do exército que o domina e o número de tropas.
+
+struct Territorio {
+    char nome[Tam_Nome];
+    char cor[Tam_Cor];
+    int tropas;
+};
 
 // --- Protótipos das Funções ---
 // Declarações antecipadas de todas as funções que serão usadas no programa, organizadas por categoria.
